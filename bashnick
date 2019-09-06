@@ -1,0 +1,35 @@
+export USE_CCACHE=1
+
+export CCACHE_DIR=~/.ccache
+
+export DU_BUILD_TYPE=RC
+
+# moar alias
+alias update='sudo apt update && sudo apt upgrade'
+#p9x
+alias p9x='cd ~/DirtyUnicorns/p9x'
+alias cross='cd ~/DirtyUnicorns/p9x/device/google/crosshatch'
+alias kernel='cd ~/DirtyUnicorns/p9x/kernel/google/bluecross'
+alias vendor='cd ~/DirtyUnicorns/p9x/vendor/google'
+alias rs='cd ~/DirtyUnicorns/p9x && repo sync --force-sync -j16'
+alias env='cd ~/DirtyUnicorns/p9x && . build/envsetup.sh && prebuilts/misc/linux-x86/ccache/ccache -M 50G'
+alias base='cd ~/DirtyUnicorns/p9x/frameworks/base'
+alias tweaks='cd ~/DirtyUnicorns/p9x/packages/apps/DU-Tweaks'
+alias settings='cd ~/DirtyUnicorns/p9x/packages/apps/Settings'
+#p9x-caf
+alias p9x-caf='cd ~/DirtyUnicorns/p9x-caf'
+alias dump='cd ~/DirtyUnicorns/p9x-caf/device/oneplus/dumpling'
+alias common='cd ~/DirtyUnicorns/p9x-caf/device/oneplus/msm8998-common'
+alias kernel5='cd ~/DirtyUnicorns/p9x-caf/kernel/oneplus/msm8998'
+alias vendor5='cd ~/DirtyUnicorns/p9x-caf/vendor/oneplus'
+alias rscaf='cd ~/DirtyUnicorns/p9x-caf && repo sync --force-sync -j16'
+alias envcaf='cd ~/DirtyUnicorns/p9x-caf && . build/envsetup.sh && prebuilts/misc/linux-x86/ccache/ccache -M 50G'
+alias cbase='cd ~/DirtyUnicorns/p9x-caf/frameworks/base'
+alias ctweaks='cd ~/DirtyUnicorns/p9x-caf/packages/apps/DU-Tweaks'
+alias csettings='cd ~/DirtyUnicorns/p9x-caf/packages/apps/Settings'
+#common
+alias bf='breakfast'
+alias lun='lunch'
+alias mk='make -j16 bacon'
+
+screenfetch
